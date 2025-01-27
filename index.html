@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 
 
 </head>
 <body class="">
     <!-- header section -->
-    <header class="max-w-screen-xl  mx-auto px-16 ">
+    <header class="max-w-screen-xl  mx-auto lg:px-16 px-10">
         <!-- banner section -->
-        <div class="flex items-center pt-10 pb-20"> 
+        <div class="flex items-center pt-10 pb-20 flex-col-reverse lg:flex-row md:flex-row"> 
             <!-- text content -->
           <div>
              <!-- title -->
@@ -34,7 +45,7 @@
                 <img src="./images/banner.png" alt="">
               </div>
               <!-- card -->
-               <div class=" absolute flex items-center bg-[#FFFFFF] shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-28 md:top-80 md:left-32 lg:left-28 ">
+               <div class=" reletive flex items-center bg-[#FFFFFF] shadow-lg lg:px-2 py-2 lg:px-10 lg:py-4 rounded-lg lg:top-28 lg:top-80 md:left-32 lg:left-28 ">
                    <div>
                     <i class='bx bxs-star text-2xl text-[#FFC850]'></i>
                    </div>
